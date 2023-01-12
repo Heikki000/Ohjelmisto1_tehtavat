@@ -1,4 +1,4 @@
-print("testi1")
+# testailua
 name = input("What is your name?")
 print()
 message_f = f"Your name is {name}, am i right?"
