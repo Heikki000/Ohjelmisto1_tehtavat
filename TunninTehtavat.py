@@ -18,3 +18,4 @@ print(message)
 # sama käyttäen f-stringiä (joka tunnistaa mm esim numerot, joten ei tarvita esim str(age)
 message_f = f"Morjes {name}, olet ensi vuonna {age}-vuotias."
 print(message_f)
+print("END")
