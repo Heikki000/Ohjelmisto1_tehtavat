@@ -10,5 +10,8 @@ import random
 random_number1 = random.randint(0, 9)
 random_number2 = random.randint(0, 9)
 random_number3 = random.randint(0, 9)
-code = str(random_number1) + str(random_number2) + str(random_number3)
+#code = str(random_number1) + str(random_number2) + str(random_number3)
+code = f"{random_number1}{random_number2}{random_number3}"
 print(f"Numerolukon koodi on: {code}")
+
+#todo: nelinumeroinen koodi
