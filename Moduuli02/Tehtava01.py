@@ -6,7 +6,7 @@ name = input("Mikä on nimesi?")
 print()
 print("Terve, " + str(name) + "!")
 """
-#vastaavasti f-lauseketta käyttäen
+#vastaavasti f-stringiä käyttäen
 print("")
 name = input("Mikä on nimesi?")
 print("")
