@@ -1,7 +1,7 @@
 """
 Kirjoita ohjelma, joka kysyy kolme kokonaislukua. Ohjelma tulostaa lukujen summan, tulon ja keskiarvon.
 """
-import math
+
 print("Anna kolme kokonaislukua!")
 one = input()
 two = input()
