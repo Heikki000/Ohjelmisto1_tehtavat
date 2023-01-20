@@ -31,11 +31,23 @@ while application_running:
     command =input("Anna komento:")
     if command == 'lopeta':
         application_running = False
+    elif command == "kerro vitsi":
+        print("Chuck Morris...")
     else:
         print("ok, jatketaan sitten")
     print("jatketaan suoritusta")
 
 print("Ohjelman suoritus loppuu")
+
+#noppaesimerkki materiaalista
+import random
+noppa1 = noppa2 = heitot = 0
+while (noppa1 != 6 or noppa2 != 6):
+    noppa1 = random.randint(1, 6)
+    noppa2 = random.randint(1, 6)
+    heitot = heitot + 1
+    print(f"{heitot}, kierrokset tulokset: {noppa1}, {noppa2}:")
+print(f"Tarvittiin {heitot:d} heittoa.")
 
 
 
