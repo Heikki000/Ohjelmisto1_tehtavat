@@ -5,8 +5,8 @@ Ohjelma ilmoittaa, onko hemoglobiiniarvo alhainen, normaali vai korkea.
 Naisen normaali hemoglobiiniarvo on välillä 117-175 g/l.
 Miehen normaali hemoglobiiniarvo on välillä 134-195 g/l.
 """
-sukupuoli = input("Anna sukupuolesi (n/m)")
-hg = float(input("Anna hemoglobiiniarvosi."))
+sukupuoli = input("Anna sukupuolesi (n/m) ")
+hg = float(input("Anna hemoglobiiniarvosi (g/l) "))
 
 if sukupuoli == "m":
     if hg < 134:
@@ -23,5 +23,3 @@ if sukupuoli == "n":
         print ("Hemoglobiiniarvosi on korkea.")
     else:
         print("Hemoglobiiniarvosi on normaali.")
-else:
-    print("Antamasi arvo ei ole kelvollinen.")
