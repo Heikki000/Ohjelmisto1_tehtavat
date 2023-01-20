@@ -10,7 +10,7 @@ C on ikkunaton hytti autokannen alapuolella.
 
 Jos käyttäjä syöttää kelvottoman hyttiluokan, ohjelma tulostaa Virheellinen hyttiluokka.
 """
-luokka= input("Anna hyttiluokka: ")
+luokka= input("Anna hyttiluokka (LUX, A, B tai C): ")
 if (luokka == "LUX" or luokka == "lux"):
     print("LUX on parvekkeellinen hytti yläkannella.")
 
