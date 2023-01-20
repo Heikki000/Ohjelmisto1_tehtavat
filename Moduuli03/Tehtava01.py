@@ -4,8 +4,9 @@ Jos kuha on alamittainen, ohjelma käskee laskea kuhan takaisin järveen ilmoitt
 montako senttiä alimmasta sallitusta pyyntimitasta puuttuu.
 Kuha on alamittainen, jos sen pituus on alle 37 cm.
 """
-pituus = float(input("Anna kuhan pituus:"))
+
+pituus = float(input("Anna kuhan pituus senttimetreinä (cm):"))
 if pituus < 37:
-    print("Kuha on alamittainen")
+    print("Kuha on alamittainen.")
     ero = 37 - pituus
-    print(f"Laske kuha takaisin järveen, koska sallitusta pyyntimitasta puuttuu {ero}.")
+    print(f"Laske kuha takaisin järveen, koska alimmasta sallitusta pyyntimitasta puuttuu {ero:.1f} senttimetriä.")
