@@ -1,5 +1,5 @@
 """
-oteutetaan algoritmi piin (π) likiarvon laskemiseksi.
+Toteutetaan algoritmi piin (π) likiarvon laskemiseksi.
 Oletetaan, että A on yksikköympyrä eli ympyrä, jonka keskipiste on origossa ja jonka säde on yksi.
 Sen ympärille piirretään pienin mahdollinen neliö B siten, että ympyrä A jää kokonaan neliön sisäpuolelle.
 Neliön nurkkapisteet ovat tällöin (-1,-1), (1,-1), (1,1) ja (-1,1).
@@ -14,3 +14,20 @@ ja toteuttaa piin likiarvon laskennan edellä kuvatulla menetelmällä. Lopuksi 
 (Huomaa, että jokaisesta arotusta pisteestä (x,y) on helppoa testata onko se yksikköympyrän A sisällä:
 riittää testata, toteuttaako piste epäyhtälön x^2+y^2<1.)
 """
+import random
+
+N = 100
+counter = 0
+n = 0
+while counter < N:
+    counter += counter
+    x = random.uniform(-1, 1)
+    y = random.uniform(-1, 1)
+    #print(f"arvottu piste {x}, {y}")
+
+    #onko piste yksikköympyrän sisällä: (x^2+y^2<1)
+    print(f"x * x + y * y < 1")
+    if x * x + y * y < 1:
+       # print("on sisällä")
+        n+= 1
+print(f"Pisteitä arvottu yhteensä {counter}, joista {n} kpl ympyrän sisällä.")
