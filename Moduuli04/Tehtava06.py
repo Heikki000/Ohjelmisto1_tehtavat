@@ -16,7 +16,7 @@ riittää testata, toteuttaako piste epäyhtälön x^2+y^2<1.)
 """
 import random
 
-N = 10000
+N = int(input("Anna arvottavien pisteiden määrä: "))
 counter = 0
 n = 0
 while counter < N:
@@ -31,3 +31,5 @@ while counter < N:
        # print("on sisällä")
         n+= 1
 print(f"Pisteitä arvottu yhteensä {counter}, joista {n} kpl ympyrän sisällä.")
+print()
+print(f"Piin likiarvo laskukaavaa käyttäen on {4*n/N}.")
