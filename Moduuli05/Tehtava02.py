@@ -7,7 +7,7 @@ sort-metodille argumentiksi reverse=True.
 """
 print("Anna numeroita ja lopuksi paina ENTER, niin saat listan 5 suurimmasta luvusta suurimmasta alkaen: ")
 luvut = []
-luku = input("Anna ensimmäinen luku: ")
+luku = input("Anna ensimmäinen luku tai lopeta painamalla ENTER: ")
 while luku != "":
     luvut.append (int(luku))
     luku = input("Anna seuraava luku tai lopeta painamalla ENTER: ")
