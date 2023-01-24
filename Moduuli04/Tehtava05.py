@@ -24,10 +24,10 @@ while kerta < 5:
     tunnus = input("Anna käyttäjä: ")
     salasana = input("Anna salasana: ")
     if tunnus == 'python' and salasana == 'rules':
-        print("Tervetuloa!")
+        print("\nTervetuloa!")
         kerta = 5
     else:
-        print("Pääsy evätty! Yritä uudelleen!")
+        print("Annoit väärät tiedot, yritä uudelleen!")
         kerta += 1
         if kerta == 5:
             print("Pääsy evätty, liian monta yritystä!")
