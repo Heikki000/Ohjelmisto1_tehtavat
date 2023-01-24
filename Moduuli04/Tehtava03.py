@@ -15,6 +15,11 @@ while luku != "":
             iso = luku
         elif luku < pieni:
             pieni = luku
+
+print(f"Suurin antamasi luku oli {iso} ja pienin luku oli {pieni} !")
+
+print("Ohjelma loppu!")
+
 """
 while luku != "":            
     luku = input("Anna luku: ")
@@ -27,9 +32,7 @@ else:
     print(f"Suurin antamasi luku oli {iso} ja pienin luku oli {pieni} !")
 """
 
-print(f"Suurin antamasi luku oli {iso} ja pienin luku oli {pieni} !")
 
-print("Ohjelma loppu!")
 
 """
 while luku == float:
