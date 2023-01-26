@@ -7,9 +7,16 @@ Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan jakaa tasan myö
 """
 # % 0 jakojäännös
 number = int(input("Anna luku:"))
+is_prime = True
 
 for iterator in range(2, number):
     print(f"testataan lukua jakamalla se arvolla {iterator}")
     print(f"jakojäännös: {number % iterator}")
     if number % iterator == 0:
         print(f"{number} ei ole alkuluku.")
+        is_prime = False
+        break
+
+# if is_prime == true:
+if is_prime:
+    print(f"{number} on alkuluku.")
