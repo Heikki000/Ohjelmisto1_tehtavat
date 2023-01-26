@@ -2,19 +2,19 @@
 Ohjelma heittää kerran kaikkia arpakuutioita ja tulostaa silmälukujen summan.
 Käytä for-toistorakennetta."""
 print()
-print("Ohjelma heittää niin monta arpakuutioita kun haluat!")
+print("Ohjelma heittää niin monta arpakuutioita kun haluat!\n")
 
 
 import random
 summa = 0
 lukumäärä = int(input("Anna kuutioiden määrä: "))
 
-for kierros in range(lukumäärä):
+for index in range(lukumäärä):
     noppa = random.randint(1, 6)
     print(f"Nopan silmäluku on {noppa}.")
     summa = summa + noppa
 
-print(f"Noppien summa on {summa}")
+print(f"\nNoppien summa on {summa}!")
 
 """
 print()
