@@ -6,12 +6,13 @@ Esimerkiksi luku 13 on alkuluku, koska se voidaan jakaa vain luvuilla 1 ja 13 si
 Toisaalta esimerkiksi luku 21 ei ole alkuluku, koska se voidaan jakaa tasan myös luvulla 3 tai luvulla 7.
 """
 # % 0 jakojäännös
-number = int(input("Anna luku:"))
+print("Ohjelma kertoo onko kokonaisluku alkuluku.")
+number = int(input("Anna luku: "))
 is_prime = True
 
 for iterator in range(2, number):
-    print(f"testataan lukua jakamalla se arvolla {iterator}")
-    print(f"jakojäännös: {number % iterator}")
+    #print(f"testataan lukua jakamalla se arvolla {iterator}")
+    #print(f"jakojäännös: {number % iterator}")
     if number % iterator == 0:
         print(f"{number} ei ole alkuluku.")
         is_prime = False
@@ -19,4 +20,6 @@ for iterator in range(2, number):
 
 # if is_prime == true:
 if is_prime:
-    print(f"{number} on alkuluku.")
+    print(f"\n{number} on alkuluku.")
+
+print("\nOhjelma loppu.")
