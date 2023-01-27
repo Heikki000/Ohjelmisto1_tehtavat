@@ -18,9 +18,10 @@ while gallona >= 0:
     gallona = float(input("Anna tilavuus nestegallonoina: "))
     if gallona > 0:
         litra = konversio(gallona)
-        print(litra)
+        print(f" Antamasi tilavuus litroina on {litra} litraa.")
 
 #kutsuu aliohjelman tuloksen
 litra = konversio(gallona)
 
-print(f"\nAntamasi tilavuus litroina on {litra} litraa.")
+#if gallona >= 0:
+    #print(f"\nAntamasi tilavuus litroina on {litra} litraa.")
