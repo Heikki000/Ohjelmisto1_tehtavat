@@ -60,8 +60,9 @@ def inventaario(tavarat):
 koulureppu = ["kynä", "kumi", "viivotin"]
 inventaario(koulureppu)
 print(koulureppu)
-
-lista = [1, 3, 4, 5]
+#listajuttuja
+# tulostetaan kaikki alkiot : for in
+lista = [1, 3, 4, 5, 6]
 for number in lista:
     print(number)
 print("---------------")
@@ -69,3 +70,8 @@ print("---------------")
 for i in range(len(lista)):
     if i%2 == 0:
         print(lista[i])
+
+#listan kopiointi
+lista2 = lista.copy()
+lista2.remove(3)
+print(lista)
