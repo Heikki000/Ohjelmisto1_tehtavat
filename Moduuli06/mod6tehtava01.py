@@ -9,7 +9,7 @@ def roll_die():
 
 def play_game():
     result = 0
-    while roll_die() != 6:
+    while result != 6:
         result = roll_die()
         print(result)
 
