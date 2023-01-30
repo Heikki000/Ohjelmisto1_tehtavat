@@ -15,15 +15,23 @@ def yks_hinta(hinta, halkaisija):
 
 print("Ohjelma kertoo sinulle, kumpi pitsoista on yksikköhinnaltaan edullisempi.")
 
-hinta1 = float(input("Anna pitsan myyntihinta:"))
-halkaisija1 = float(input("Anna pitsan halkaisija (cm):"))
+hinta1 = float(input("Anna ensimmäisen pitsan myyntihinta euroina:"))
+halkaisija1 = float(input("Anna ensimmäisen pitsan halkaisija (cm):"))
 yks_hinta(hinta1, halkaisija1)
 neliohinta1 = float(yks_hinta(hinta1, halkaisija1))
 
-hinta2 = float(input("Anna toisen pitsan myyntihinta:"))
+hinta2 = float(input("Anna toisen pitsan myyntihinta euroina:"))
 halkaisija2 = float(input("Anna toisen pitsan halkaisija (cm):"))
 yks_hinta(hinta2, halkaisija2)
 neliohinta2 = float(yks_hinta(hinta2, halkaisija2))
 
-print(f"{neliohinta1:.2f} ja {neliohinta2:.2f}.")
+# testataan hinntojen oikeellisuus:
+# print(f"{neliohinta1:.2f} ja {neliohinta2:.2f}.")
+print()
+if neliohinta1 < neliohinta2:
+    print("Ensimmäinen pitsa antaa paremman vastineen rahoille!")
+elif neliohinta1 == neliohinta2:
+    print("Pitsat ovat samanhintaiset!")
+else:
+    print ("Toinen pitsa antaa paremman vastineen rahoille!")
 
