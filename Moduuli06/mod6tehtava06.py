@@ -13,7 +13,7 @@ def yks_hinta(hinta, halkaisija):
     neliohinta = hinta / (math.pi/4*halkaisija)
     return float(neliohinta)
 
-print("Ohjelma kertoo sinulle, kumpi pitsoista on yksikköhinnaltaan edullisempi.")
+print("Ohjelma kertoo sinulle, kumpi 2 pitsasta on yksikköhinnaltaan edullisempi.")
 
 hinta1 = float(input("Anna ensimmäisen pitsan myyntihinta euroina:"))
 halkaisija1 = float(input("Anna ensimmäisen pitsan halkaisija (cm):"))
