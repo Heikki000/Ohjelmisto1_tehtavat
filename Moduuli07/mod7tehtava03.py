@@ -8,3 +8,35 @@ Jos käyttäjä haluaa lopettaa, ohjelman suoritus päättyy. Käyttäjä saa va
 miten monta kertaa tahansa aina siihen asti, kunnes hän haluaa lopettaa. (ICAO-koodi on lentoaseman
 yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK. Löydät koodeja helposti selaimen avulla.)
 """
+
+def lisaa():
+    print()
+    return
+
+def hae():
+    return
+
+def lopeta():
+    return
+
+#pääohjelma
+
+lentoasemat = {"Helsinki-Vantaa": "EFHK" ,"Ivalo" : "EFIV" ,
+               "Kuusamo" : "EFKS" , "Oulu" : "EFOU"}
+
+toiminto = -1
+
+while toiminto != 3:
+    print("1 = Lisää uusi lentoasema")
+    print("2 = Hae lentoasema")
+    print("3 = Lopeta")
+
+    toiminto = int(input("Valitse toiminto: "))
+    if toiminto == 1:
+        lisaa()
+    if toiminto == 2:
+        hae()
+    if toiminto == 3:
+        lopeta()
+
+print("\nOhjelma lopetettu!")
