@@ -18,7 +18,7 @@ def lisaa():
 def hae():
     tunnus = input("Anna lentoaseman ICAO koodi (esim. 'ABCD': ")
     if tunnus in lentoasemat:
-        print("Tunnusta vastaava lentokenttä on " + lentoasemat[tunnus] + ".")
+        print("Tunnusta vastaava lentoasema on " + lentoasemat[tunnus] + ".")
     return
 
 def lopeta():
@@ -26,7 +26,7 @@ def lopeta():
 
 def tulosta():
     for asema in lentoasemat:
-        print(f"{asema}")
+        print(f"{lentoasemat}")
         return
 
 #pääohjelma
@@ -37,11 +37,14 @@ lentoasemat = {"EFHK": "Helsinki-Vantaa","EFIV": "Ivalo",
 toiminto = -1
 
 while toiminto != 3:
+    print("0 = Tulosta lentoasemat")
     print("1 = Lisää uusi lentoasema")
     print("2 = Hae lentoasema")
     print("3 = Lopeta")
 
     toiminto = int(input("Valitse toiminto: "))
+    if toiminto == 0:
+        tulosta()
     if toiminto == 1:
         lisaa()
     if toiminto == 2:
