@@ -10,25 +10,29 @@ yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFH
 """
 
 def lisaa():
-    tunnus = input("Anna lentoaseman tunnus: ")
-    nimi = input("Anns lentoaseman nimi")
+    nimi = input("Anna lentoaseman nimi: ")
+    tunnus = input("Anna lentoaseman ICAO-koodi: ")
     lentoasemat[tunnus] = nimi
-    
     return
 
 def hae():
-    tunnus = input("Anna lentoaseman ICAO koodi: ")
+    tunnus = input("Anna lentoaseman ICAO koodi (esim. 'ABCD': ")
     if tunnus in lentoasemat:
-        print
+        print("Tunnusta vastaava lentokenttä on " + lentoasemat[tunnus] + ".")
     return
 
 def lopeta():
     return
 
+def tulosta():
+    for asema in lentoasemat:
+        print(f"{asema}")
+        return
+
 #pääohjelma
 
-lentoasemat = {"Helsinki-Vantaa": "EFHK" ,"Ivalo" : "EFIV" ,
-               "Kuusamo" : "EFKS" , "Oulu" : "EFOU"}
+lentoasemat = {"EFHK": "Helsinki-Vantaa","EFIV": "Ivalo",
+               "EFKS": "Kuusamo", "EFOU": "Oulu"}
 
 toiminto = -1
 
