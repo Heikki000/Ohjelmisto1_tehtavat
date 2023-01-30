@@ -11,9 +11,19 @@ import math
 
 def yks_hinta(hinta, halkaisija):
     neliohinta = hinta / (math.pi/4*halkaisija)
-    return neliohinta
+    return float(neliohinta)
 
-hinta = float(input("Anna pitsan myyntihinta:"))
-halkaisija = float(input("Anna pitsan halkaisija (cm):"))
-print(yks_hinta(hinta, halkaisija))
+print("Ohjelma kertoo sinulle, kumpi pitsoista on yksikköhinnaltaan edullisempi.")
+
+hinta1 = float(input("Anna pitsan myyntihinta:"))
+halkaisija1 = float(input("Anna pitsan halkaisija (cm):"))
+yks_hinta(hinta1, halkaisija1)
+neliohinta1 = float(yks_hinta(hinta1, halkaisija1))
+
+hinta2 = float(input("Anna toisen pitsan myyntihinta:"))
+halkaisija2 = float(input("Anna toisen pitsan halkaisija (cm):"))
+yks_hinta(hinta2, halkaisija2)
+neliohinta2 = float(yks_hinta(hinta2, halkaisija2))
+
+print(f"{neliohinta1:.2f} ja {neliohinta2:.2f}.")
 
