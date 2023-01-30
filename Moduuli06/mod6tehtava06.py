@@ -25,7 +25,7 @@ halkaisija2 = float(input("Anna toisen pitsan halkaisija (cm):"))
 yks_hinta(hinta2, halkaisija2)
 neliohinta2 = float(yks_hinta(hinta2, halkaisija2))
 
-# testataan hinntojen oikeellisuus:
+# testataan hintojen oikeellisuus:
 # print(f"{neliohinta1:.2f} ja {neliohinta2:.2f}.")
 print()
 if neliohinta1 < neliohinta2:
