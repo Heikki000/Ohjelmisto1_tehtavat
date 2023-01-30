@@ -12,7 +12,7 @@ def yks_hinta(hinta, halkaisija):
     neliohinta = hinta / (math.pi/4*halkaisija)
     return float(neliohinta)
 
-print("Ohjelma kertoo sinulle, kumpi 2 pitsasta on yksikköhinnaltaan edullisempi.")
+print("Ohjelma kertoo sinulle, kumpi 2 pitsasta on yksikköhinnaltaan edullisempi.\n")
 
 hinta1 = float(input("Anna ensimmäisen pitsan myyntihinta euroina:"))
 halkaisija1 = float(input("Anna ensimmäisen pitsan halkaisija (cm):"))
@@ -33,4 +33,7 @@ elif neliohinta1 == neliohinta2:
     print("Pitsat ovat samanhintaiset!")
 else:
     print ("Toinen pitsa antaa paremman vastineen rahoille!")
+
+#PS. tehtävässä puhutaan hinnasta per neliömetri, mutta tässä käytössä neliö-cm, koska halkaisija senteissä
+# yksikkömuunnos ei kuitenkaan oleellinen, koska neliöhintaa ei tarvitse printata - pelkästään se, kumpi on halvempi...
 

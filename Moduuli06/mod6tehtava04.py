@@ -10,5 +10,7 @@ def summa(numerolista):
         return (sum(numerolista))
 
 lista = [1, 2, 3, 4, 90]
+
 summa(lista)
+
 print(summa(lista))

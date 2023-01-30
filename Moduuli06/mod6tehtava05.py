@@ -14,6 +14,7 @@ def ei_parittomia(objekti_lista):
 
 
 testi_lista = [1, 23, 45, 67, 100, 200]
+ei_parittomia(testi_lista)
 print("Alkuperäinen lista on " + str(testi_lista) + ".")
 #print(testi_lista)
 print("\nMuokattu lista ilman parittomia lukuja on " + str(ei_parittomia(testi_lista)) + ".")

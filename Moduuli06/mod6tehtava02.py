@@ -6,7 +6,7 @@ joka kysytään käyttäjältä ohjelman suorituksen alussa.
 """
 
 import random
-number_of_sides = int(input("Anna nopan tahkojen määrä: "))
+
 def roll_die(number_of_sides):
     return random.randint(1, number_of_sides)
 
@@ -17,5 +17,7 @@ def play_game():
     while result != number_of_sides:
         result = roll_die(number_of_sides)
         print(result)
+
+number_of_sides = int(input("Anna nopan tahkojen määrä eli maksimisilmäluku: "))
 
 play_game()
