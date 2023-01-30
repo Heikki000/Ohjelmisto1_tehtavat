@@ -8,7 +8,6 @@ Yksikköhintojen laskennassa on hyödynnettävä kirjoitettua funktiota.
 import math
 #ympyrän pinta-alan kaava on pi * r^2
 # säde, r on halkaisija, d / 2 -> pinta-ala halkaisijan avulla on pi/4 * d^2
-
 def yks_hinta(hinta, halkaisija):
     neliohinta = hinta / (math.pi/4*halkaisija)
     return float(neliohinta)

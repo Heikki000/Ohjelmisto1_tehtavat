@@ -9,6 +9,6 @@ def summa(numerolista):
         #print(sum(numerolista))
         return (sum(numerolista))
 
-lista = [1, 2, 3, 4, 5]
+lista = [1, 2, 3, 4, 90]
 summa(lista)
 print(summa(lista))
