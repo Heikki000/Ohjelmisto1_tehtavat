@@ -21,5 +21,5 @@ elif (kk_nro >= 9 and kk_nro <= 11):
     vuodenaika = vuodenajat[0]
 else:
     vuodenaika = "tuntematon"
-print(vuodenaika)
+print("Antamaasi kuukausi sijoittuu vuodenaikaan " + vuodenaika + ".")
 #vuodenajat[print(f"Antamasi kuukausi, {kk_nro} vastaa vuodenaikaa str{vuodenaika}.")
