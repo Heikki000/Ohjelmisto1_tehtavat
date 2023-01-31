@@ -51,5 +51,5 @@ while toiminto != 3:
         hae()
     if toiminto == 3:
         lopeta()
-print(lentoasemat)
+#print(lentoasemat) testataan, mitkä asemat sanakirjassa
 print("\nOhjelma lopetettu!")
