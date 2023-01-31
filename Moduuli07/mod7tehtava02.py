@@ -14,8 +14,6 @@ while nimi != "":
     else:
         print("Uusi nimi.")
         nimet.add(nimi)
-        
-
 """
 while nimi != "":
     if nimi in nimet:
