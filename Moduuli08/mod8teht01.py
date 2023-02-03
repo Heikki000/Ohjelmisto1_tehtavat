@@ -5,7 +5,10 @@ lentokenttätietokannasta. ICAO-koodi on tallennettuna airport-taulun ident-sara
 """
 import mysql.connector
 
-connection = mysql.connector.connect(
+
+
+def connect_db():
+    return mysql.connector.connect(
          host='127.0.0.1',
          port= 3306,
          database='flight_game',
@@ -13,3 +16,10 @@ connection = mysql.connector.connect(
          password='sala1',
          autocommit=True
          )
+connect = connect_db()
+#print connect
+
+def get_airport():
+    query = "select name, sumicipality from airport where ident ='efhk'"
+    cursor = connection.cursor()
+    cursor.execute(query)
