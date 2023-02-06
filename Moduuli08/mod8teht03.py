@@ -5,6 +5,7 @@ koordinaatteihin. Laske etäisyys geopy-kirjaston avulla: https://geopy.readthed
 Asenna kirjasto valitsemalla View / Tool Windows / Python Packages. Kirjoita hakukenttään geopy ja vie asennus loppuun.
 """
 import mysql.connector
+import geopy
 
 yhteys = mysql.connector.connect(
          host='127.0.0.1',
