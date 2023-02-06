@@ -13,12 +13,13 @@ yhteys = mysql.connector.connect(
          user='user1',
          password='sala1',
          autocommit=True
-         )
+)
+
 
 def search_ICAO(input1, input2):
     sql_command = "select airport.latitude_deg, airport.longitude_deg from airport where ident = '" + input1 + "' or ident = '" + input2 + "'"
     airport = ()
-    cursor = connection.cursor()
+    cursor = yhteys.cursor()
     cursor.execute(sql_command)
     total = cursor.fetchall()
     if cursor.rowcount > 0:
@@ -33,4 +34,4 @@ while True:
     cordinates = search_ICAO(ICAO1, ICAO2)
     place1 = cordinates[0], cordinates[1]
     place2 = cordinates[2], cordinates[3]
-    print(f"Lentokenttien etäisyys on: {geopy.distance.distance(place1, place2).km:1.2f}km")
+    print(f"Lentokenttien etäisyys on: {geopy.distance.distance(place1,place2).km:1.2f}km")
