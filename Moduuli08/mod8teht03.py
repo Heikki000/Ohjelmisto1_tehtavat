@@ -35,4 +35,4 @@ while True:
     cordinates = search_ICAO(ICAO1, ICAO2)
     place1 = cordinates[0], cordinates[1]
     place2 = cordinates[2], cordinates[3]
-    print(f"Lentokenttien etäisyys on: {geopy.distance.distance(place1,place2).km:1.2f}km")
+    print(f"Lentokenttien etäisyys on: {geopy.distance(place1,place2):1.2f}km")
