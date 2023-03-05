@@ -5,7 +5,6 @@ koordinaatteihin. Laske etäisyys geopy-kirjaston avulla: https://geopy.readthed
 Asenna kirjasto valitsemalla View / Tool Windows / Python Packages. Kirjoita hakukenttään geopy ja vie asennus loppuun.
 """
 import mysql.connector
-import geopy
 
 yhteys = mysql.connector.connect(
          host='127.0.0.1',
@@ -35,4 +34,5 @@ while True:
     cordinates = search_ICAO(ICAO1, ICAO2)
     place1 = cordinates[0], cordinates[1]
     place2 = cordinates[2], cordinates[3]
-    print(f"Lentokenttien etäisyys on: {geopy.distance(place1,place2):1.2f}km")
+    from geopy import distance
+    print(f"Lentokenttien etäisyys on: {distance.distance(place1,place2).km:1.2f}km")
